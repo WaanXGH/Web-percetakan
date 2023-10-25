@@ -1,0 +1,27 @@
+.jumbotron {
+    padding-bottom: 3rem;
+    padding-top: 8rem;
+    background-color: #f2ff00ce;
+}
+
+.navbar-brand {
+    padding-left: 2rem;
+    color: black;
+}
+
+.nav-link {
+    color: black;
+    text-decoration: solid;
+}
+
+#p {
+    font-size: 15px;
+}
+
+.navbar-brand {
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer {
+    background-color: black;
+}

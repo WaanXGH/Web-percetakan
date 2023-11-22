@@ -48,6 +48,20 @@ return new class extends Migration
             'type'=>'text',
         ]);
 
+        setting::create([
+            'key'=>'_whatsapp',
+            'label'=>'whatsapp',
+            'value'=>'https://wa.me/6283897345926',
+            'type'=>'text',
+        ]);
+
+        setting::create([
+            'key'=>'_github',
+            'label'=>'github',
+            'value'=>'https://github.com/WaanXGH/Web-Personal',
+            'type'=>'text',
+        ]);
+
     }
 
     /**

@@ -37,6 +37,7 @@ class SettingResource extends Resource
     {
         return $table
             ->columns([
+                tables\Columns\TextColumn::make('key'),
                 tables\Columns\TextColumn::make('label'),
                 tables\Columns\TextColumn::make('value')->limit(40),
             ])

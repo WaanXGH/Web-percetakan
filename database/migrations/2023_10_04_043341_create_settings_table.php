@@ -24,14 +24,14 @@ return new class extends Migration
         setting::create([
             'key'=>'_site_name',
             'label'=>'judul_situs',
-            'value'=>'my_website',
+            'value'=>'WaanPrint',
             'type'=>'text',
         ]);
 
         setting::create([
             'key'=>'location',
             'label'=>'alamat',
-            'value'=>'BantarGebang,Kota Bekasi,Jawa Barat ',
+            'value'=>'Jl. Lap. Bola Rw. Butun, RT.001/RW.006, Ciketing Udik, Kec. Bantar Gebang, Kota Bks, Jawa Barat 17153 ',
             'type'=>'text',
         ]);
         setting::create([
@@ -61,6 +61,21 @@ return new class extends Migration
             'value'=>'https://github.com/WaanXGH/Web-Personal',
             'type'=>'text',
         ]);
+        setting::create([
+            'key'=>'_instagram',
+            'label'=>'instagram',
+            'value'=>'https://instagram.com/naraatermuxxx',
+            'type'=>'text',
+        ]);
+        setting::create([
+            'key'=>'_email',
+            'label'=>'email',
+            'value'=>'xycoPrint@gmail.com',
+            'type'=>'text',
+        ]);
+
+// command ketika ingin menambahakan setting value
+// pa migrate:refresh --path='./database/migrations/nama tabel'
 
     }
 

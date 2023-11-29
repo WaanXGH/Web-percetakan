@@ -36,8 +36,9 @@ class SectionResource extends Resource
                 ->required()->image()->disk('public'),
                 Forms\Components\RichEditor::make('content')
                 ->required(),
-                Forms\Components\Select::make('post_as')->options(['JUMBOTRON'=>'JUMBOTRON',
-                                                                'ABOUT'=>'ABOUT'])
+                Forms\Components\Select::make('post_as')->options(['POSTER'=>'POSTER',
+                                                                'BANNER'=>'BANNER',
+                                                                'SPANDUK'=>'SPANDUK'])
                 ]),
             ]);
             

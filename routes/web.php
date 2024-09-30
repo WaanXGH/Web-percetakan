@@ -1,6 +1,9 @@
 <?php
 
+use App\Http\Controllers\komenController;
+use App\Http\Controllers\testimonisController;
 use Illuminate\Support\Facades\Route;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +16,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//Komentar
 Route::get('/', function () {
-    return view('index');
+    return view('Login'); // Arahkan ke absorb.blade.php
 });
+
+Route::get('/', [komenController::class, 'page']);
+
+Route::post('/komentar',[komenController::class,'komentar']);
+Route::get('/testimonis', [testimonisController::class, 'index']);
+
+
+

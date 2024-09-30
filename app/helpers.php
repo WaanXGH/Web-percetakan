@@ -3,6 +3,7 @@
 use App\Models\project;
 use App\Models\section;
 use App\Models\setting;
+use App\Models\testimoni;
 
 function get_setting_value($key)
 {
@@ -26,5 +27,12 @@ function get_section_data($key)
 function get_project()
 {
     $data = project::all();
+    return $data;
+}
+
+
+function get_testimonis()
+{
+    $data = testimoni::all();
     return $data;
 }

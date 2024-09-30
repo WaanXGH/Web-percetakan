@@ -16,7 +16,7 @@ return new class extends Migration
             $table->id();
             $table->string('key');
             $table->string('label');
-            $table->string('value')->nullable();
+            $table->text('value')->nullable();
             $table->string('type');
 
             $table->timestamps();
@@ -71,6 +71,18 @@ return new class extends Migration
             'key'=>'_email',
             'label'=>'email',
             'value'=>'xycoPrint@gmail.com',
+            'type'=>'text',
+        ]);
+        setting::create([
+            'key'=>'_description',
+            'label'=>'description',
+            'value'=>'WaanArt adalah toko cetak profesional yang melayani cetak digital dan offline dengan hasil berkualitas.Kami menawarkan berbagai layanan cetak, mulai dari kartu nama hingga spanduk, serta desain kustom dan pengiriman cepat untuk kebutuhan pribadi maupun bisnis.',
+            'type'=>'LongText',
+        ]);
+        setting::create([
+            'key'=>'_Notelp',
+            'label'=>'nomortelp',
+            'value'=>'083897345826',
             'type'=>'text',
         ]);
 
